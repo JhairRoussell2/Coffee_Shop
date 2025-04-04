@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Coffee Shop</title>
+  </head>
+  <body>
+    <h1>Contacto</h1>
+    <p>
+      Si tienes alguna consulta, por favor, completa el siguiente formulario:
+    </p>
+
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <!-- Renderiza el formulario -->
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <a href="{% url 'home' %}">Volver a la página de inicio</a>
+  </body>
+</html>

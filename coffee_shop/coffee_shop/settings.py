@@ -144,3 +144,14 @@ LOGGING = {
     },
 }
 
+
+
+# Configuración de correo en Django
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Usando Gmail como servidor SMTP
+EMAIL_PORT = 587  # Puerto para TLS
+EMAIL_USE_TLS = True  # Usar TLS para seguridad
+EMAIL_HOST_USER = 'jhairrmb@gmail.com'  # Tu correo electrónico
+EMAIL_HOST_PASSWORD = 'ujye btsr qmoc zizf'  # Tu contraseña de correo (o contraseña de aplicación)
+
+

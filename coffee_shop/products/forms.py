@@ -16,3 +16,8 @@ class ProductForm(forms.Form):
             available=self.cleaned_data["available"],
             photo=self.cleaned_data["photo"],
         )
+        
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=100, label="Nombre")
+    email = forms.EmailField(label="Correo electrónico")
+    message = forms.CharField(widget=forms.Textarea, label="Mensaje")
